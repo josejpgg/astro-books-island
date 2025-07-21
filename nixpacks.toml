@@ -8,4 +8,4 @@ cmds = ["pnpm install --frozen-lockfile"]
 cmds = ["pnpm run build"]
 
 [phases.start]
-cmds = ["npx serve dist"]
+cmds = ["pnpm run start"]
