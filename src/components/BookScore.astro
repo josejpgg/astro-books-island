@@ -1,0 +1,11 @@
+---
+import { PUBLIC_SCORE_API_ENDPOINT } from 'astro:env/server';
+
+console.log(PUBLIC_SCORE_API_ENDPOINT);
+const res = await fetch(PUBLIC_SCORE_API_ENDPOINT)
+const scoreValue = await res.text()
+---
+
+<span>
+⭐ Puntuación: {scoreValue.trim()}/5
+</span>
