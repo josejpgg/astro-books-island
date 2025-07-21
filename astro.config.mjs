@@ -19,5 +19,8 @@ export default defineConfig({
       PUBLIC_SHOW_BUY_BUTTON: envField.boolean({ default: true, context: 'server', access: 'public' }),
       PUBLIC_SCORE_API_ENDPOINT: envField.string({ context: 'server', access: 'public' })
     }
+  },
+  server: {
+    host: true,
   }
 });
