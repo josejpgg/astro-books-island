@@ -12,5 +12,5 @@ pnpm run build
 
 ### Deploy in Server
 ```sh
-pm2 start pnpm --name "astro-books-island" -- PORT=8082 run start
+pm2 start pnpm --name "astro-books-island" -- run start
 ```
